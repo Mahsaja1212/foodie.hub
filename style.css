@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f4f1;
+  color: #333;
+}
+
+
+.navbar {
+  background-color: #6f4e37 !important;
+  /* رنگ هدر اصلی */
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #d9c7b0 !important;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('food.jpg') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card.restaurant-card,
+.card {
+  transition: transform 0.3s ease;
+  border: none;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+.card.restaurant-card:hover,
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card.restaurant-card img,
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+h2 {
+  color: #5b2c04;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #3d2b1f;
+}
+
+.card-text {
+  color: #4f4034;
+}
+
+
+.btn-primary {
+  background-color: #8d5524;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a6632c;
+}
+
+.btn-success {
+  background-color: #5c7c46;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #6d8c55;
+}
+
+form .form-control,
+form .form-select {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+form .form-label {
+  font-weight: 600;
+  color: #5b2c04;
+}
+
+
+footer {
+  background-color: #6f4e37;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #e9d8c2;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+footer .border-top {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+
+.badge.bg-success {
+  background-color: #6d8c55 !important;
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+}
